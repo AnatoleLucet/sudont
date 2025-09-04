@@ -5,7 +5,12 @@ import (
 	"os"
 
 	"github.com/AnatoleLucet/sudont/cmd"
+	"github.com/AnatoleLucet/sudont/container"
 )
+
+func init() {
+	container.Init()
+}
 
 func main() {
 	if err := cmd.Execute(); err != nil {
