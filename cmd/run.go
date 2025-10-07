@@ -9,12 +9,12 @@ import (
 	"github.com/urfave/cli/v3"
 )
 
-type runOpts struct {
+type runParams struct {
 	User string
 	Args []string
 }
 
-func run(params runOpts) error {
+func run(params runParams) error {
 	io := process.IO{
 		Stdin:  os.Stdin,
 		Stdout: os.Stdout,
